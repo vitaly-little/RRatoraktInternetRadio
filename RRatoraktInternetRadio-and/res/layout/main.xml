@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="Soucre: (http://shoutcast2.omroep.nl:8104/)"
+		android:layout_marginTop="10dip" android:gravity="center" />
+	<ProgressBar android:id="@+id/progressBar1"
+		android:indeterminateOnly="false" android:progressDrawable="@android:drawable/progress_horizontal"
+		android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+		android:minHeight="20dip" android:maxHeight="20dip"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginLeft="20dip" android:layout_marginRight="20dip"
+		android:layout_marginTop="10dip"></ProgressBar>
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:layout_height="wrap_content" android:layout_width="match_parent"
+		android:layout_marginTop="20dip" android:gravity="center">
+		<Button android:text="Play" android:id="@+id/buttonPlay"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1"></Button>
+		<Button android:text="Stop" android:id="@+id/buttonStopPlay"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1"></Button>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/linearLayout2"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:orientation="vertical" android:layout_marginTop="10dip">
+		<TextView android:text="Recording Controls" android:id="@+id/textView1"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="center_horizontal"></TextView>
+		<LinearLayout android:id="@+id/linearLayout3"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="5dip" android:gravity="center_horizontal">
+			<Button android:text="Record" android:id="@+id/buttonRecord"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:enabled="false"></Button>
+			<Button android:text="Stop" android:id="@+id/buttonStopRecord"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:enabled="false"></Button>
+		</LinearLayout>
+		<TextView android:text="File Location: /sdcard/Songs/sample.mp3"
+			android:id="@+id/textView2" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="5dip"
+			android:gravity="center_horizontal"></TextView>
+	</LinearLayout>
+</LinearLayout>
